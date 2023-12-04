@@ -3,7 +3,7 @@
 Add the script tag to your `head`
 
 ```html
-<script src="//unpkg.com/@on-js/on-js@0.2.0" defer></script>
+<script src="//unpkg.com/@on-js/on-js@0.2.1" defer></script>
 ```
 
 Or install with npm
