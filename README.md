@@ -5,7 +5,7 @@
 Add the script tag to your `head`
 
 ```html
-<script src="//unpkg.com/@on-js/on-js@0.2.1" defer></script>
+<script src="//unpkg.com/@on-js/on-js@0.3.0" defer></script>
 ```
 
 Or install with npm
@@ -23,9 +23,8 @@ import "@on-js/on-js";
 `on-js` parses object literals into a set of commands. These object literals come in two formats:
 
 ```html
-<div js-on="{event: {target: {...options}}}">
-  <div js-hover="{target: {...options}}"></div>
-</div>
+<div js-on="{event: {target: {...options}}}"></div>
+<div js-hover="{target: {...options}}"></div>
 ```
 
 When using `js-on` the top level keys are the events to listen for, e.g `click` and `hover`. If multiple events are to trigger the same command then a space-separated list is allowed. Each event must have an object as its value.
