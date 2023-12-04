@@ -27,7 +27,7 @@ import "@on-js/on-js";
 <div js-hover="{target: {...options}}"></div>
 ```
 
-When using `js-on` the top level keys are the events to listen for, e.g `click` and `hover`. If multiple events are to trigger the same command then a space-separated list is allowed. Each event must have an object as its value.
+When using `js-on` the top level keys are the events to listen for, e.g `click` and `focus`. If multiple events are to trigger the same command then a space-separated list is allowed. Each event must have an object as its value.
 
 The `target` is the element(s) on which to apply the options. The `target` must be one of `self`, `parent`, or a query selector. Multiple targets may be passed. Each target must have an object as its value.
 
