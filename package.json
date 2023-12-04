@@ -1,7 +1,7 @@
 {
   "name": "@on-js/on-js",
   "version": "0.3.0",
-  "description": "An object literal-powered JavaScript framework",
+  "description": "An experimental JavaScript framework",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/on-js/on-js.git"
