@@ -1,0 +1,42 @@
+{
+  "name": "@on-js/on-js",
+  "version": "0.2.0",
+  "description": "A JSON-powered JavaScript framework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/on-js/on-js.git"
+  },
+  "author": "Michael Rushton",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/on-js.umd.cjs",
+  "module": "./dist/on-js.js",
+  "unpkg": "./dist/on-js.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/on-js.js",
+      "require": "./dist/on-js.umd.cjs"
+    }
+  },
+  "scripts": {
+    "prettier": "npx prettier . --write",
+    "minify": "npx esbuild dist/on-js.js --minify --outfile=dist/on-js.min.js",
+    "build": "npx eslint . && npm run prettier && vite build && npm run minify"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.4"
+  }
+}
