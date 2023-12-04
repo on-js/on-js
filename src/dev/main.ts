@@ -1,2 +1,2 @@
 import "./main.css";
-import "../dist/main";
+import "../lib/main";

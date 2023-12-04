@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A JSON-powered JavaScript framework" />
+    <meta
+      name="description"
+      content="An object literal-powered JavaScript framework"
+    />
     <title>on-js</title>
     <script type="module" src="/src/dev/main.ts"></script>
   </head>
@@ -13,107 +16,107 @@
         <p>Toggle .bg-blue-100</p>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-on='{"pointerenter pointerleave": {"self": {"toggle": "bg-blue-100"}}}'
+          js-on="{'pointerenter pointerleave': {self: {toggle: 'bg-blue-100'}}}"
         >
           js-on pointerenter and pointerleave
         </div>
         <input
           type="text"
           class="border border-gray-500 px-3 py-1.5"
-          js-blur='{"self": {"toggle": "bg-blue-100"}}'
+          js-blur="{self: {toggle: 'bg-blue-100'}}"
           value="js-blur"
         />
         <input
           type="text"
           class="border border-gray-500 px-3 py-1.5"
-          js-change='{"self": {"toggle": "bg-blue-100"}}'
+          js-change="{self: {toggle: 'bg-blue-100'}}"
           value="js-change"
         />
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-click='{"self": {"toggle": "bg-blue-100"}}'
+          js-click="{self: {toggle: 'bg-blue-100'}}"
         >
           js-click
         </div>
         <input
           type="text"
           class="border border-gray-500 px-3 py-1.5"
-          js-focus='{"self": {"toggle": "bg-blue-100"}}'
+          js-focus="{self: {toggle: 'bg-blue-100'}}"
           value="js-focus"
         />
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-hover='{"self": {"toggle": "bg-blue-100"}}'
+          js-hover="{self: {toggle: 'bg-blue-100'}}"
         >
           js-hover
         </div>
         <input
           type="text"
           class="border border-gray-500 px-3 py-1.5"
-          js-input='{"self": {"toggle": "bg-blue-100"}}'
+          js-input="{self: {toggle: 'bg-blue-100'}}"
           value="js-input"
         />
         <input
           type="text"
           class="border border-gray-500 px-3 py-1.5"
-          js-keydown='{"self": {"toggle": "bg-blue-100"}}'
+          js-keydown="{self: {toggle: 'bg-blue-100'}}"
           value="js-keydown"
         />
         <input
           type="text"
           class="border border-gray-500 px-3 py-1.5"
-          js-keyup='{"self": {"toggle": "bg-blue-100"}}'
+          js-keyup="{self: {toggle: 'bg-blue-100'}}"
           value="js-keyup"
         />
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-load='{"self": {"on": {"click": {"self": {"toggle": "bg-blue-100"}}}}}'
+          js-load="{self: {on: {click: {self: {toggle: 'bg-blue-100'}}}}}"
         >
           js-load click
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-pointerdown='{"self": {"toggle": "bg-blue-100"}}'
+          js-pointerdown="{self: {toggle: 'bg-blue-100'}}"
         >
           js-pointerdown
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-pointerenter='{"self": {"toggle": "bg-blue-100"}}'
+          js-pointerenter="{self: {toggle: 'bg-blue-100'}}"
         >
           js-pointerenter
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-pointerleave='{"self": {"toggle": "bg-blue-100"}}'
+          js-pointerleave="{self: {toggle: 'bg-blue-100'}}"
         >
           js-pointerleave
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-pointermove='{"self": {"toggle": "bg-blue-100"}}'
+          js-pointermove="{self: {toggle: 'bg-blue-100'}}"
         >
           js-pointermove
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-pointerout='{"self": {"toggle": "bg-blue-100"}}'
+          js-pointerout="{self: {toggle: 'bg-blue-100'}}"
         >
           <span>js-pointerout</span>
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-pointerover='{"self": {"toggle": "bg-blue-100"}}'
+          js-pointerover="{self: {toggle: 'bg-blue-100'}}"
         >
           <span>js-pointerover</span>
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-pointerup='{"self": {"toggle": "bg-blue-100"}}'
+          js-pointerup="{self: {toggle: 'bg-blue-100'}}"
         >
           js-pointerup
         </div>
-        <form js-reset='{"self": {"toggle": "bg-blue-100"}}'>
+        <form js-reset="{self: {toggle: 'bg-blue-100'}}">
           <button
             class="w-full border border-gray-500 px-3 py-1.5 text-left"
             type="reset"
@@ -121,7 +124,7 @@
             js-reset
           </button>
         </form>
-        <form js-submit='{"self": {"toggle": "bg-blue-100"}}'>
+        <form js-submit="{self: {toggle: 'bg-blue-100'}}">
           <button
             class="w-full border border-gray-500 px-3 py-1.5 text-left"
             type="submit"
@@ -136,62 +139,62 @@
         <p>js-click</p>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-click='{"self": {"delete": true}}'
+          js-click="{self: {delete: true}}"
         >
           delete
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-click='{"self": {"toggle": "bg-blue-100"}}'
+          js-click="{self: {toggle: 'bg-blue-100'}}"
         >
           toggle .bg-blue-100
         </div>
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-click='{"self": {"add": "bg-blue-100"}}'
+          js-click="{self: {add: 'bg-blue-100'}}"
         >
           add .bg-blue-100
         </div>
         <div
           class="border border-gray-500 bg-blue-100 px-3 py-1.5"
-          js-click='{"self": {"remove": "bg-blue-100"}}'
+          js-click="{self: {remove: 'bg-blue-100'}}"
         >
           remove .bg-blue-100
         </div>
         <input
           type="text"
           class="border border-gray-500 px-3 py-1.5"
-          js-click='{"self": {"toggleattr": "readonly"}}'
+          js-click="{self: {toggleattr: 'readonly'}}"
           value="toggleattr readonly"
         />
         <input
           type="text"
           class="border border-gray-500 px-3 py-1.5"
-          js-click='{"self": {"attr": {"readonly": "readonly"}}}'
+          js-click="{self: {attr: {readonly: 'readonly'}}}"
           value='attr readonly="readonly"'
         />
         <div
           class="border border-gray-500 px-3 py-1.5"
-          js-click='{"self": {"content": "Content changed"}}'
+          js-click="{self: {content: new Date().toLocaleDateString('en-GB')}}"
         >
-          content "Content changed"
+          content current date
         </div>
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"move": "up"}}'
+            js-click="{self: {move: 'up'}}"
           >
             moveup 1
           </div>
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"move": "up"}}'
+            js-click="{self: {move: 'up'}}"
           >
             moveup 2
           </div>
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"move": "up"}}'
+            js-click="{self: {move: 'up'}}"
           >
             moveup 3
           </div>
@@ -199,19 +202,19 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"move": "down"}}'
+            js-click="{self: {move: 'down'}}"
           >
             movedown 1
           </div>
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"move": "down"}}'
+            js-click="{self: {move: 'down'}}"
           >
             movedown 2
           </div>
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"move": "down"}}'
+            js-click="{self: {move: 'down'}}"
           >
             movedown 3
           </div>
@@ -219,7 +222,7 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"movebefore": "#movebefore"}}'
+            js-click="{self: {movebefore: '#movebefore'}}"
           >
             movebefore item 3
           </div>
@@ -231,7 +234,7 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"moveafter": "#moveafter"}}'
+            js-click="{self: {moveafter: '#moveafter'}}"
           >
             moveafter item 3
           </div>
@@ -245,7 +248,7 @@
           <div class="border border-gray-500 px-3 py-1.5">Item 2</div>
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"movetostart": "parent"}}'
+            js-click="{self: {movetostart: 'parent'}}"
           >
             movetostart parent
           </div>
@@ -253,7 +256,7 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"movetoend": "parent"}}'
+            js-click="{self: {movetoend: 'parent'}}"
           >
             movetoend parent
           </div>
@@ -263,7 +266,7 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"swap": "#swap"}}'
+            js-click="{self: {swap: '#swap'}}"
           >
             swap item 3
           </div>
@@ -273,7 +276,7 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"clonebefore": "#clonebefore"}}'
+            js-click="{self: {clonebefore: '#clonebefore'}}"
           >
             clonebefore item 3
           </div>
@@ -285,7 +288,7 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"cloneafter": "#cloneafter"}}'
+            js-click="{self: {cloneafter: '#cloneafter'}}"
           >
             cloneafter item 3
           </div>
@@ -299,7 +302,7 @@
           <div class="border border-gray-500 px-3 py-1.5">Item 2</div>
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"clonetostart": "parent"}}'
+            js-click="{self: {clonetostart: 'parent'}}"
           >
             clonetostart parent
           </div>
@@ -307,7 +310,7 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"clonetoend": "parent"}}'
+            js-click="{self: {clonetoend: 'parent'}}"
           >
             clonetoend parent
           </div>
@@ -317,7 +320,7 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"#on": {"on": {"click": {"self": {"toggle": "bg-blue-100"}}}}}'
+            js-click="{'#on': {on: {click: {self: {toggle: 'bg-blue-100'}}}}}"
           >
             on click item 2 toggle .bg-blue-100
           </div>
@@ -326,14 +329,14 @@
         <div class="grid gap-3 border border-gray-500 p-3">
           <div
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"#dispatch": {"dispatch": "click"}}'
+            js-click="{'#dispatch': {dispatch: 'click'}}"
           >
             dispatch click to below
           </div>
           <div
             id="dispatch"
             class="border border-gray-500 px-3 py-1.5"
-            js-click='{"self": {"toggle": "bg-blue-100"}}'
+            js-click="{self: {toggle: 'bg-blue-100'}}"
           >
             toggle .bg-blue-100
           </div>
