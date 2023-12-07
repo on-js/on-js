@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="An experimental JavaScript framework"
-    />
+    <meta name="description" content="An experimental JavaScript framework" />
     <title>on-js</title>
     <script type="module" src="/src/dev/main.ts"></script>
   </head>
@@ -341,6 +338,14 @@
             toggle .bg-blue-100
           </div>
         </div>
+        <form js-submit="{self: {toggle: 'bg-blue-100'}, preventDefault: true}">
+          <button
+            class="w-full border border-gray-500 px-3 py-1.5 text-left"
+            type="submit"
+          >
+            submit prevent default
+          </button>
+        </form>
       </div>
     </div>
   </body>

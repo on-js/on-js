@@ -5,7 +5,7 @@
 Add the script tag to your `head`
 
 ```html
-<script src="//unpkg.com/@on-js/on-js@0.3.0" defer></script>
+<script src="//unpkg.com/@on-js/on-js@0.3.1" defer></script>
 ```
 
 Or install with npm
@@ -22,14 +22,16 @@ import "@on-js/on-js";
 
 `on-js` parses object literals into a set of commands. These object literals come in two formats:
 
-```html
-<div js-on="{event: {target: {...options}}}"></div>
-<div js-hover="{target: {...options}}"></div>
+```javascript
+{event: {target: {...options}, ...}, ...}
+{target: {...options}, ...}
 ```
 
 When using `js-on` the top level keys are the events to listen for, e.g `click` and `focus`. If multiple events are to trigger the same command then a space-separated list is allowed. Each event must have an object as its value.
 
 The `target` is the element(s) on which to apply the options. The `target` must be one of `self`, `parent`, or a query selector. Multiple targets may be passed. Each target must have an object as its value.
+
+A special `preventDefault` target may also be passed with a boolean value. If set to `true` then `event.preventDefault()` will be called.
 
 `js-on` example
 
@@ -68,6 +70,14 @@ The `target` is the element(s) on which to apply the options. The `target` must 
   <li>Click to delete me 2</li>
   <li>Click to delete me 3</li>
 </ul>
+```
+
+`js-submit` example
+
+```html
+<form js-submit="{preventDefault: true}">
+  <button type="submit">Submit</button>
+</form>
 ```
 
 ## Options

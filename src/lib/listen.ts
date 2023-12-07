@@ -8,10 +8,15 @@ export default (element: HTMLElement, event: string, json: object): void => {
       event.stopPropagation();
 
       for (const selector in json) {
-        const action: Actions = json[selector];
-        target(element, selector, action.context).forEach((el: Element): void =>
-          process(el, action, element),
-        );
+        if ("preventDefault" === selector && true === json[selector]) {
+          event.preventDefault();
+        } else {
+          const action: Actions = json[selector];
+
+          target(element, selector, action.context).forEach(
+            (el: Element): void => process(el, action, element),
+          );
+        }
       }
     });
 

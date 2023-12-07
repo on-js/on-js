@@ -1,7 +1,10 @@
 {
   "name": "@on-js/on-js",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "An experimental JavaScript framework",
+  "keywords": [
+    "JavaScript"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/on-js/on-js.git"
@@ -22,9 +25,10 @@
     }
   },
   "scripts": {
-    "prettier": "npx prettier . --write",
-    "minify": "npx esbuild dist/on-js.js --minify --outfile=dist/on-js.min.js",
-    "build": "npx eslint . && npm run prettier && vite build && npm run minify"
+    "dev": "vite",
+    "prettier": "prettier . --write",
+    "minify": "esbuild dist/on-js.js --minify --outfile=dist/on-js.min.js",
+    "build": "eslint . && npm run prettier && vite build && npm run minify"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.13.1",
